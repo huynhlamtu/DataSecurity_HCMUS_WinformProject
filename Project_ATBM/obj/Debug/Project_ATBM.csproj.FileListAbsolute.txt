@@ -1,0 +1,12 @@
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\bin\Debug\Project_ATBM.exe.config
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\bin\Debug\Project_ATBM.exe
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\bin\Debug\Project_ATBM.pdb
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.csprojAssemblyReference.cache
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.Form1.resources
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.Properties.Resources.resources
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.csproj.GenerateResource.cache
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.csproj.CoreCompileInputs.cache
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.csproj.CopyComplete
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.exe
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Debug\Project_ATBM.pdb
