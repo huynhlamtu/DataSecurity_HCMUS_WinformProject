@@ -33,6 +33,8 @@
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new Project_ATBM.DataSet1();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.user_name = new System.Windows.Forms.Label();
+            this.pass_word = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,11 +68,31 @@
             this.dataGridView1.Size = new System.Drawing.Size(426, 150);
             this.dataGridView1.TabIndex = 1;
             // 
+            // user_name
+            // 
+            this.user_name.AutoSize = true;
+            this.user_name.Location = new System.Drawing.Point(601, 9);
+            this.user_name.Name = "user_name";
+            this.user_name.Size = new System.Drawing.Size(35, 13);
+            this.user_name.TabIndex = 2;
+            this.user_name.Text = "label1";
+            // 
+            // pass_word
+            // 
+            this.pass_word.AutoSize = true;
+            this.pass_word.Location = new System.Drawing.Point(718, 9);
+            this.pass_word.Name = "pass_word";
+            this.pass_word.Size = new System.Drawing.Size(35, 13);
+            this.pass_word.TabIndex = 3;
+            this.pass_word.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pass_word);
+            this.Controls.Add(this.user_name);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -79,6 +101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +111,8 @@
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private DataSet1 dataSet1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label user_name;
+        private System.Windows.Forms.Label pass_word;
     }
 }
 

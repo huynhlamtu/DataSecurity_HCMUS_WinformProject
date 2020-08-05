@@ -10,3 +10,4 @@ C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Release\Project_ATBM.c
 C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Release\Project_ATBM.csproj.CopyComplete
 C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Release\Project_ATBM.exe
 C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Release\Project_ATBM.pdb
+C:\Users\chane\source\repos\Project_ATBM\Project_ATBM\obj\Release\Project_ATBM.Login.resources

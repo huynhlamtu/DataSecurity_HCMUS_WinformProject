@@ -13,20 +13,28 @@ namespace Project_ATBM
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(string username, string password)
         {
             InitializeComponent();
+            user_name.Text = username;
+            pass_word.Text = password;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show(user_name.Text + " and " + pass_word.Text);
+            
             string connectionString = @"Data Source=(DESCRIPTION =
     (ADDRESS = (PROTOCOL = TCP)(HOST = DESKTOP-II7U9L8)(PORT = 1521))
     (CONNECT_DATA =
       (SERVER = DEDICATED)
       (SERVICE_NAME = XE)
     )
-  );User Id = BTC_Ad;password=123";
+  );User Id = " + user_name.Text + ";password="+ pass_word.Text;
+
+          //  MessageBox.Show(connectionString);
+
+            
             OracleConnection con = new OracleConnection();
             con.ConnectionString = connectionString;
             con.Open();
@@ -37,6 +45,7 @@ namespace Project_ATBM
             cmd.Connection = con;
 
             cmd.CommandType = CommandType.Text;
+            
 
             OracleDataReader dr = cmd.ExecuteReader();
 
