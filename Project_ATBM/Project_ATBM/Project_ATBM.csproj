@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33BC64A2-5F65-42A7-BC3E-42FC5993A2DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_ATBM</RootNamespace>
+    <AssemblyName>Project_ATBM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addRoler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRoler.Designer.cs">
+      <DependentUpon>addRoler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BauCu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BauCu.Designer.cs">
+      <DependentUpon>BauCu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="delRoler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delRoler.Designer.cs">
+      <DependentUpon>delRoler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantPrivToUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantPrivToUser.Designer.cs">
+      <DependentUpon>GrantPrivToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantRoleToUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantRoleToUser.Designer.cs">
+      <DependentUpon>GrantRoleToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrantToRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantToRole.Designer.cs">
+      <DependentUpon>GrantToRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectList.Designer.cs">
+      <DependentUpon>ObjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelPhanHe1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelPhanHe1.Designer.cs">
+      <DependentUpon>PanelPhanHe1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLyUser.Designer.cs">
+      <DependentUpon>QLyUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RevokePrivOfRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevokePrivOfRole.Designer.cs">
+      <DependentUpon>RevokePrivOfRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RevokePrivOfUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevokePrivOfUser.Designer.cs">
+      <DependentUpon>RevokePrivOfUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RevokeRoleFromUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevokeRoleFromUser.Designer.cs">
+      <DependentUpon>RevokeRoleFromUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RolePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RolePanel.Designer.cs">
+      <DependentUpon>RolePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToGiamSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToGiamSat.Designer.cs">
+      <DependentUpon>ToGiamSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToLapDS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToLapDS.Designer.cs">
+      <DependentUpon>ToLapDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToTheoDoiKQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToTheoDoiKQ.Designer.cs">
+      <DependentUpon>ToTheoDoiKQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnlockUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnlockUser.Designer.cs">
+      <DependentUpon>UnlockUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addRoler.resx">
+      <DependentUpon>addRoler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BauCu.resx">
+      <DependentUpon>BauCu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delRoler.resx">
+      <DependentUpon>delRoler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantPrivToUser.resx">
+      <DependentUpon>GrantPrivToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantRoleToUser.resx">
+      <DependentUpon>GrantRoleToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantToRole.resx">
+      <DependentUpon>GrantToRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectList.resx">
+      <DependentUpon>ObjectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelPhanHe1.resx">
+      <DependentUpon>PanelPhanHe1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QLyUser.resx">
+      <DependentUpon>QLyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevokePrivOfRole.resx">
+      <DependentUpon>RevokePrivOfRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevokePrivOfUser.resx">
+      <DependentUpon>RevokePrivOfUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevokeRoleFromUser.resx">
+      <DependentUpon>RevokeRoleFromUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RolePanel.resx">
+      <DependentUpon>RolePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToGiamSat.resx">
+      <DependentUpon>ToGiamSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToLapDS.resx">
+      <DependentUpon>ToLapDS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToTheoDoiKQ.resx">
+      <DependentUpon>ToTheoDoiKQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnlockUser.resx">
+      <DependentUpon>UnlockUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
